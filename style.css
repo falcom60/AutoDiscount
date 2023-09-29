@@ -381,6 +381,9 @@ footer {
     #home .left , #home .right {
         width: 100%;
     }
+    #home h1 {
+        margin-top: 100px;
+    }
     .right {
         margin-top: 50px;
         width: 60%;
@@ -453,6 +456,21 @@ footer {
     .menu_toggle.active::after {
         width: 28px;
         transform: rotate(-45deg);
+    }
+    header .menu.responsive {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        z-index: 2;
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
     }
 
 }
