@@ -10,24 +10,28 @@
 <body>
 
     <header>
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
         <div class="logo">
-            <p><span>Auto</span>Discount</p>
+            <p><span>Garage</span>V.Parrot</p>
         </div>
         <ul class="menu">
-            <li><a href="">Acceuil</a></li>
-            <li><a href="">Vehicules</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#cars">Vehicules</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="login_btn">LOGIN</button>
     </header>
     <section id="home">
         <div class="left">
-           <h1>Buy <span>Your car</span>
-               Cheaper From Us
+           <h1>Acheter <span>Votre Voiture</span>
+               Chez Garage V. Parrot
            </h1>
            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-           <a href="#">BUY NOW</a>
+           <a href="#">Acheter Maintenant</a>
         </div>
         <div class="right">
             <img src="images/ferari.png">
@@ -96,7 +100,7 @@
         <div class="list_services">
             <div class="service">
                 <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
-                <h3>Dépannage</h3>
+                <h3>Carrossier</h3>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                 <a href="#" class="read_more">Lire Plus</a>
             </div>
@@ -108,7 +112,7 @@
             </div>
             <div class="service">
                 <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
-                <h3>Dépannage</h3>
+                <h3>Mécanique</h3>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                 <a href="#" class="read_more">Lire Plus</a>
             </div>
@@ -116,7 +120,7 @@
     </section>
 
     <section id="contact">
-        <h1 class="section_title">Nos vehicules</h1>
+        <h1 class="section_title">Contactez-Nous</h1>
         <div class="localisation_contact_div">
             <div class="localisation">
                 <h3>Notre Adresse</h3>
@@ -135,5 +139,20 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>FaizDev Youtube Copyright 2022 </p>
+    </footer>
+
+    <script>
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+        menu_toggle.onclick = function () {
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
 </body>
 </html>
